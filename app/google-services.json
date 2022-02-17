@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "949640491004",
+    "project_id": "e-psyc",
+    "storage_bucket": "e-psyc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949640491004:android:bd67f5a49f4dfd94d30c79",
+        "android_client_info": {
+          "package_name": "com.motionlaboratory.e_psyc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949640491004-569v498lk81giql9v4msea5h8uejkj50.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS6Z7C29JXdMnDT4SBv0HHFQz8BweZWRc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949640491004-569v498lk81giql9v4msea5h8uejkj50.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
