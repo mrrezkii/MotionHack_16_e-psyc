@@ -32,6 +32,11 @@ class LoginFragment : Fragment() {
                 R.id.action_loginFragment_to_registerFragment
             )
         }
+        binding.tvForgot.setOnClickListener {
+            findNavController().navigate(
+                R.id.action_loginFragment_to_forgotPasswordFragment
+            )
+        }
     }
 
 }
