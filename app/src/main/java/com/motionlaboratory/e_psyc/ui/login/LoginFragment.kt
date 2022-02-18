@@ -1,5 +1,6 @@
 package com.motionlaboratory.e_psyc.ui.login
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.motionlaboratory.e_psyc.R
 import com.motionlaboratory.e_psyc.databinding.FragmentLoginBinding
+import com.motionlaboratory.e_psyc.ui.main.MainActivity
 
 class LoginFragment : Fragment() {
 
@@ -36,6 +38,9 @@ class LoginFragment : Fragment() {
             findNavController().navigate(
                 R.id.action_loginFragment_to_forgotPasswordFragment
             )
+        }
+        binding.btnLogin.setOnClickListener {
+            startActivity(Intent(requireActivity(), MainActivity::class.java))
         }
     }
 
