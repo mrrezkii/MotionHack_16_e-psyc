@@ -3,10 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-hdpi/button_rounded_blue_10.xml" value="0.1615" />
+        <entry key="app/src/main/res/drawable-xxhdpi/button_rounded_white_bluestroke_20.xml" value="0.1775" />
         <entry key="app/src/main/res/drawable-xxhdpi/circle_blue.xml" value="0.155" />
+        <entry key="app/src/main/res/drawable/button_rounded_bluestroke_10.xml" value="0.1615" />
         <entry key="app/src/main/res/drawable/circle_blue.xml" value="0.155" />
+        <entry key="app/src/main/res/drawable/ic_login.xml" value="0.1775" />
+        <entry key="app/src/main/res/layout/activity_auth.xml" value="0.16" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1636271529888551" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.1636271529888551" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_register.xml" value="0.14990942028985507" />
       </map>
     </option>
   </component>

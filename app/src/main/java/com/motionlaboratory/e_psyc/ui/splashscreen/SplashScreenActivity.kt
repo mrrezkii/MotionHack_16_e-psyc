@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.motionlaboratory.e_psyc.databinding.ActivitySplashScreenBinding
-import com.motionlaboratory.e_psyc.ui.main.MainActivity
+import com.motionlaboratory.e_psyc.ui.auth.AuthActivity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -28,7 +28,7 @@ class SplashScreenActivity : AppCompatActivity() {
     private fun delayMain() {
         activityScope.launch {
             delay(4000)
-            startActivity(Intent(this@SplashScreenActivity, MainActivity::class.java))
+            startActivity(Intent(this@SplashScreenActivity, AuthActivity::class.java))
             finish()
         }
     }
