@@ -11,17 +11,20 @@
         <entry key="app/src/main/res/drawable/circle_blue.xml" value="0.155" />
         <entry key="app/src/main/res/drawable/ic_login.xml" value="0.1775" />
         <entry key="app/src/main/res/drawable/ic_sign_up.xml" value="0.1615" />
+        <entry key="app/src/main/res/drawable/ic_ticket.xml" value="0.1615" />
         <entry key="app/src/main/res/layout/activity_auth.xml" value="0.16" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1636271529888551" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.1636271529888551" />
         <entry key="app/src/main/res/layout/adapter_doctor.xml" value="0.5" />
         <entry key="app/src/main/res/layout/adapter_doctort.xml" value="0.1636271529888551" />
+        <entry key="app/src/main/res/layout/adapter_ticket.xml" value="0.5" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_forgot_password.xml" value="0.1636271529888551" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_register.xml" value="0.2" />
         <entry key="app/src/main/res/layout/fragment_reset_password.xml" value="0.1636271529888551" />
+        <entry key="app/src/main/res/layout/fragment_ticket.xml" value="0.33" />
         <entry key="app/src/main/res/menu/menu_bottomnav.xml" value="0.31203703703703706" />
       </map>
     </option>
