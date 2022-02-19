@@ -1,5 +1,6 @@
 package com.motionlaboratory.e_psyc.ui.pay
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.motionlaboratory.e_psyc.databinding.ActivityPayBinding
@@ -30,6 +31,12 @@ class PayActivity : AppCompatActivity() {
         binding.tvPrice.text = doctor!!.price
         binding.tvTotal.text = doctor!!.price
         binding.tvTotalBills.text = doctor!!.price
+        binding.tvCheckout.setOnClickListener {
+            val intent = Intent(this, StatusActivity::class.java)
+            intent.putExtra("doctor", doctor)
+            startActivity(intent)
+            finish()
+        }
     }
 
 }
