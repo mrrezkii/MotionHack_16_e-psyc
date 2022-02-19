@@ -1,5 +1,6 @@
 package com.motionlaboratory.e_psyc.ui.dashboard
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +12,7 @@ import com.motionlaboratory.e_psyc.source.model.Doctor
 import com.motionlaboratory.e_psyc.source.model.mockDoctor
 import com.motionlaboratory.e_psyc.ui.main.DoctorAdapter
 import com.motionlaboratory.e_psyc.ui.main.MainViewModel
+import com.motionlaboratory.e_psyc.ui.pay.PayActivity
 import com.motionlaboratory.e_psyc.utils.observe
 import com.motionlaboratory.e_psyc.utils.showToast
 import timber.log.Timber
@@ -52,7 +54,10 @@ class DashboardFragment : Fragment() {
     private fun setupRecyclerView() {
         adapter = DoctorAdapter(mockDoctor(), object : DoctorAdapter.OnAdapterListener {
             override fun onClick(result: Doctor) {
-
+                Timber.e("$result")
+                val intent = Intent(requireActivity(), PayActivity::class.java)
+                intent.putExtra("doctor", result)
+                startActivity(intent)
             }
 
         })
