@@ -7,6 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.motionlaboratory.e_psyc.databinding.FragmentDashboardBinding
+import com.motionlaboratory.e_psyc.source.model.Doctor
+import com.motionlaboratory.e_psyc.source.model.mockDoctor
+import com.motionlaboratory.e_psyc.ui.main.DoctorAdapter
 import com.motionlaboratory.e_psyc.ui.main.MainViewModel
 import com.motionlaboratory.e_psyc.utils.observe
 import com.motionlaboratory.e_psyc.utils.showToast
@@ -16,6 +19,7 @@ class DashboardFragment : Fragment() {
 
     private lateinit var binding: FragmentDashboardBinding
     private val viewModel by lazy { ViewModelProvider(requireActivity()).get(MainViewModel::class.java) }
+    private lateinit var adapter: DoctorAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -30,6 +34,11 @@ class DashboardFragment : Fragment() {
         viewModel.getDoctor()
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        setupRecyclerView()
+    }
+
     private fun setupObserver() {
         observe(viewModel.doctors) {
             Timber.e("$it")
@@ -38,6 +47,16 @@ class DashboardFragment : Fragment() {
         observe(viewModel.message) { message ->
             showToast(message)
         }
+    }
+
+    private fun setupRecyclerView() {
+        adapter = DoctorAdapter(mockDoctor(), object : DoctorAdapter.OnAdapterListener {
+            override fun onClick(result: Doctor) {
+
+            }
+
+        })
+        binding.listDoctor.adapter = adapter
     }
 
 }

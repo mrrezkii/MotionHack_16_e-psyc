@@ -7,3 +7,28 @@ data class Doctor(
     var rate: String? = null,
     var price: String? = null
 )
+
+fun mockDoctor(): ArrayList<Doctor> {
+    val listAdapter: ArrayList<Doctor> = ArrayList()
+    listAdapter.add(
+        Doctor(
+            null,
+            "Rezki",
+            "Senin - Jumat",
+            "4.6",
+            "Rp200.000"
+        )
+    )
+
+    listAdapter.add(
+        Doctor(
+            null,
+            "Nanda",
+            "Senin - Jumat",
+            "4.6",
+            "Rp200.000"
+        )
+    )
+
+    return listAdapter
+}
