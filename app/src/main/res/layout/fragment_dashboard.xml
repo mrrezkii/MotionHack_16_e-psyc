@@ -1,14 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.dashboard.DashboardFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Hallo,\nStefanus Kartiko"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="27dp"
+        android:src="@drawable/avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/sv_docter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="27dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/button_rounded_grey_10"
+        android:queryHint="Search... "
+        app:layout_constraintTop_toBottomOf="@+id/tv_hello"
+        tools:layout_editor_absoluteX="27dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_counseling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="19dp"
+        android:src="@drawable/ic_counseling"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sv_docter" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_webinar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="27dp"
+        android:src="@drawable/ic_webinar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sv_docter" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:src="@drawable/ic_article"
+        app:layout_constraintEnd_toStartOf="@+id/iv_webinar"
+        app:layout_constraintStart_toEndOf="@+id/iv_counseling"
+        app:layout_constraintTop_toBottomOf="@+id/sv_docter" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_counseling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Konseling"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_counseling" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="6dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Artikel"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_webinar"
+        app:layout_constraintStart_toEndOf="@+id/tv_counseling"
+        app:layout_constraintTop_toBottomOf="@+id/iv_article" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_webinar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="28dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Webinar"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_webinar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Jadwal Konseling Hari Ini"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_counseling" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="27dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_schedule"
+        android:minHeight="117dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_schedule">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_avatar_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/avatar_doctor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Dokter Muhammad Ali"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/iv_avatar_doctor"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="7dp"
+            android:background="#4699F9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_avatar_doctor">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_calendar"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:padding="5dp"
+                android:text="Kamis, 17 Februaru 2022"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_popular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Dokter Popular"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_schedule" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@+id/tv_popular"
+        tools:listitem="@layout/adapter_doctor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
