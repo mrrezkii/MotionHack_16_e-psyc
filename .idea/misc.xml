@@ -15,12 +15,14 @@
         <entry key="app/src/main/res/layout/activity_auth.xml" value="0.16" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1636271529888551" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.1636271529888551" />
+        <entry key="app/src/main/res/layout/adapter_chat.xml" value="0.33" />
         <entry key="app/src/main/res/layout/adapter_doctor.xml" value="0.5" />
         <entry key="app/src/main/res/layout/adapter_doctort.xml" value="0.1636271529888551" />
         <entry key="app/src/main/res/layout/adapter_ticket.xml" value="0.5" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_forgot_password.xml" value="0.1636271529888551" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_order.xml" value="0.1636271529888551" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_register.xml" value="0.2" />
         <entry key="app/src/main/res/layout/fragment_reset_password.xml" value="0.1636271529888551" />
