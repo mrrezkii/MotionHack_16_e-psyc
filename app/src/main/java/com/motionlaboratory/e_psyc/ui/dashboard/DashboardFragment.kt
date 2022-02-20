@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.motionlaboratory.e_psyc.databinding.FragmentDashboardBinding
 import com.motionlaboratory.e_psyc.source.model.Doctor
 import com.motionlaboratory.e_psyc.source.model.mockDoctor
+import com.motionlaboratory.e_psyc.ui.counseling.CounselingActivity
 import com.motionlaboratory.e_psyc.ui.main.DoctorAdapter
 import com.motionlaboratory.e_psyc.ui.main.MainViewModel
 import com.motionlaboratory.e_psyc.ui.pay.PayActivity
@@ -39,6 +40,7 @@ class DashboardFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupRecyclerView()
+        setupView()
     }
 
     private fun setupObserver() {
@@ -62,6 +64,15 @@ class DashboardFragment : Fragment() {
 
         })
         binding.listDoctor.adapter = adapter
+    }
+
+    private fun setupView() {
+        binding.ivCounseling.setOnClickListener {
+            startActivity(Intent(requireActivity(), CounselingActivity::class.java))
+        }
+        binding.tvCounseling.setOnClickListener {
+            startActivity(Intent(requireActivity(), CounselingActivity::class.java))
+        }
     }
 
 }

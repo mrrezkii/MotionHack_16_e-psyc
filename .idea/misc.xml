@@ -13,6 +13,7 @@
         <entry key="app/src/main/res/drawable/ic_sign_up.xml" value="0.1615" />
         <entry key="app/src/main/res/drawable/ic_ticket.xml" value="0.1615" />
         <entry key="app/src/main/res/layout/activity_auth.xml" value="0.16" />
+        <entry key="app/src/main/res/layout/activity_counseling.xml" value="0.16875" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1636271529888551" />
         <entry key="app/src/main/res/layout/activity_pay.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.1636271529888551" />
