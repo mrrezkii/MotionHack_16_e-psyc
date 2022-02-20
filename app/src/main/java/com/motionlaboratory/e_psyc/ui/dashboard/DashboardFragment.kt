@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.motionlaboratory.e_psyc.databinding.FragmentDashboardBinding
 import com.motionlaboratory.e_psyc.source.model.Doctor
 import com.motionlaboratory.e_psyc.source.model.mockDoctor
+import com.motionlaboratory.e_psyc.ui.article.ArticleActivity
 import com.motionlaboratory.e_psyc.ui.counseling.CounselingActivity
 import com.motionlaboratory.e_psyc.ui.main.DoctorAdapter
 import com.motionlaboratory.e_psyc.ui.main.MainViewModel
@@ -72,6 +73,12 @@ class DashboardFragment : Fragment() {
         }
         binding.tvCounseling.setOnClickListener {
             startActivity(Intent(requireActivity(), CounselingActivity::class.java))
+        }
+        binding.ivArticle.setOnClickListener {
+            startActivity(Intent(requireActivity(), ArticleActivity::class.java))
+        }
+        binding.tvArticle.setOnClickListener {
+            startActivity(Intent(requireActivity(), ArticleActivity::class.java))
         }
     }
 

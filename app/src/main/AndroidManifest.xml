@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Epsyc.NoActionBar">
         <activity
+            android:name=".ui.article.ArticleActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.counseling.CounselingActivity"
             android:exported="false" />
         <activity

@@ -12,16 +12,18 @@
         <entry key="app/src/main/res/drawable/ic_login.xml" value="0.1775" />
         <entry key="app/src/main/res/drawable/ic_sign_up.xml" value="0.1615" />
         <entry key="app/src/main/res/drawable/ic_ticket.xml" value="0.1615" />
+        <entry key="app/src/main/res/layout/activity_article.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_auth.xml" value="0.16" />
         <entry key="app/src/main/res/layout/activity_counseling.xml" value="0.16875" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1636271529888551" />
         <entry key="app/src/main/res/layout/activity_pay.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.1636271529888551" />
         <entry key="app/src/main/res/layout/activity_status.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/adapter_article.xml" value="0.22" />
         <entry key="app/src/main/res/layout/adapter_chat.xml" value="0.33" />
         <entry key="app/src/main/res/layout/adapter_doctor.xml" value="0.5" />
         <entry key="app/src/main/res/layout/adapter_doctort.xml" value="0.1636271529888551" />
-        <entry key="app/src/main/res/layout/adapter_ticket.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/adapter_ticket.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_forgot_password.xml" value="0.1636271529888551" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.25" />
