@@ -15,9 +15,7 @@
         android:theme="@style/Theme.Epsyc.NoActionBar">
         <activity
             android:name=".ui.webinar.DetailWebinarActivity"
-            android:exported="false"
-            android:label="@string/title_activity_detail_webinar"
-            android:theme="@style/Theme.Epsyc.NoActionBar.NoActionBar" />
+            android:exported="false" />
         <activity
             android:name=".ui.article.ArticleActivity"
             android:exported="false" />
