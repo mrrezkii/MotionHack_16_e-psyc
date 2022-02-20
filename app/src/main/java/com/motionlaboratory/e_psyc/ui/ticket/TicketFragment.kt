@@ -1,5 +1,6 @@
 package com.motionlaboratory.e_psyc.ui.ticket
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +9,7 @@ import androidx.fragment.app.Fragment
 import com.motionlaboratory.e_psyc.databinding.FragmentTicketBinding
 import com.motionlaboratory.e_psyc.source.model.Ticket
 import com.motionlaboratory.e_psyc.source.model.mockTicket
+import com.motionlaboratory.e_psyc.ui.webinar.DetailWebinarActivity
 
 class TicketFragment : Fragment() {
 
@@ -30,7 +32,9 @@ class TicketFragment : Fragment() {
     private fun setupRecyclerView() {
         adapter = TicketAdapter(mockTicket(), object : TicketAdapter.OnAdapterListener {
             override fun onClick(result: Ticket) {
-
+                val intent = Intent(requireActivity(), DetailWebinarActivity::class.java)
+                intent.putExtra("data", result)
+                startActivity(intent)
             }
 
         })

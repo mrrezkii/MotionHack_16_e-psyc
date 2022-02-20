@@ -1,12 +1,15 @@
 package com.motionlaboratory.e_psyc.source.model
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
 
+@Parcelize
 data class Ticket(
     var key: String? = null,
     var name: String? = null,
     var date: String? = null,
     var schedule: String? = null,
     var photo: String? = null
-)
+) : Parcelable
 
 fun mockTicket(): ArrayList<Ticket> {
     val listAdapter: ArrayList<Ticket> = ArrayList()
