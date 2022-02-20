@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Epsyc.NoActionBar">
         <activity
+            android:name=".ui.webinar.WebinarActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.webinar.DetailWebinarActivity"
             android:exported="false" />
         <activity

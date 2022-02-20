@@ -15,6 +15,7 @@ import com.motionlaboratory.e_psyc.ui.counseling.CounselingActivity
 import com.motionlaboratory.e_psyc.ui.main.DoctorAdapter
 import com.motionlaboratory.e_psyc.ui.main.MainViewModel
 import com.motionlaboratory.e_psyc.ui.pay.PayActivity
+import com.motionlaboratory.e_psyc.ui.webinar.WebinarActivity
 import com.motionlaboratory.e_psyc.utils.observe
 import com.motionlaboratory.e_psyc.utils.showToast
 import timber.log.Timber
@@ -79,6 +80,12 @@ class DashboardFragment : Fragment() {
         }
         binding.tvArticle.setOnClickListener {
             startActivity(Intent(requireActivity(), ArticleActivity::class.java))
+        }
+        binding.tvWebinar.setOnClickListener {
+            startActivity(Intent(requireActivity(), WebinarActivity::class.java))
+        }
+        binding.ivWebinar.setOnClickListener {
+            startActivity(Intent(requireActivity(), WebinarActivity::class.java))
         }
     }
 
